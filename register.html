@@ -13,38 +13,23 @@
     
       <body>
       <h1>Login</h1>
-      <!-- form goes here -->
         <form action="/register" method="POST">
+            <label for="firstname">First Name</label>
+            <input placeholder="John" type="text" name="firstname"/></br>
+            <label for="lastname">Last Name</label>
+            <input placeholder="Doe" type="text" name="lastname"/></br>
+            <label for="useremail">Email address</label>
+            <input type="email" placeholder="soandso@whatsherface.com" name="useremail"/></br>
             <label for="username">Username:</label>
-            <input id="username"  placeholder="Username" type="text" name="username"></br>
+            <input placeholder="Username" type="text" name="username"/></br>
             <label for="password">Password:</label>
-            <input id="password" placeholder="Password" type="password" name="password"></br>
+            <input placeholder="Password" type="password" name="password"/></br>
+            <label for="confirmpassword">Confirm password:</label>
+            <input placeholder="Password again" type="password" name="confirmpassword"/></br>
+            <input type="checkbox" name="terms"/>
+            <label for="terms">I agree to your draconian terms of services</label></br>
             <input type="Submit" value="Login">
+            <input type="reset"/>
         </form>
-
-        <form action="/testinputs" method="POST" id="inputtypes">
-          <input type="button" value="Add to favorites"/>
-          <input type="checkbox" name="SpamMe" checked/>
-          <input type="email" pattern=".+@megacorp\.com" size="30"/>
-          <input type="file" name="avatar" accept="image/png, image/jpeg"/>
-          <input type="hidden" name="PostId" value="23456"/>
-          <input type="number" name="tentacles" min="10" max="100"/>
-          <input type="password" id="pass" name="password" minlength="8" required/>
-          <input type="radio" name="drone" value="huey" checked/>
-          <input type="radio" name="drone" value="kablooey"/>
-          <input type="range" name="volume" min="0" max="11"/>
-          <input type="reset" value="Reset" disabled/>
-          <input type="submit" value="Submit"/>
-          <input type="text" name="name" required minlength="4" maxlength="8" size="10"/>
-          <textarea rows="10" cols="10"></textarea>
-          <select name="hobbit">
-            <option value="frodo">Frodo</option>
-            <option value="sam">Sam</option>
-            <option value="merry">Merry</option>
-            <option value="pippin">Pippin</option>
-          </select>
-        </form>
-        <p>dont use pattern step min minlength max or maxlength for limiting inputs.</p>
-        <p>Use js validation instead</p>
       </body>
     </html>
